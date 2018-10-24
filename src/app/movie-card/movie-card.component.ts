@@ -8,11 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class MovieCardComponent implements OnInit {
 
   // Components Comunication input variable
-  @Input()  movie: Object;
+  @Input()  movie: any;
   
   constructor() { }
 
   ngOnInit() {
+    console.log(this.movie)
   }
 
 }
