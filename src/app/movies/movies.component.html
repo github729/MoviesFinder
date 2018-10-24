@@ -1,0 +1,18 @@
+<p class="pull-right visible-xs">
+  <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+</p>
+<app-movie-search></app-movie-search>
+
+<h3 class="orange-text">Top Rated Movies</h3>
+<div class="row is-flex">
+  <div class="col-sm-6 col-md-4 col-lg-3 col-xs-6" *ngFor="let movie of topRatedList; let i = index;">
+    <app-movie-card [movie]="movie"></app-movie-card>
+  </div>
+</div>
+
+<h3 class="orange-text">Popular Movies</h3>
+<div class="row is-flex">
+  <div class="col-sm-3" *ngFor="let movie of popularList; let i = index;">
+    <app-movie-card [movie]="movie"></app-movie-card>
+  </div>
+</div>
