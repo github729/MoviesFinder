@@ -5,7 +5,6 @@ img {
     font-size: 15px;
     font-weight: 300;
 }
-
 .text-ellipsis {
     white-space: nowrap;
     overflow: hidden;

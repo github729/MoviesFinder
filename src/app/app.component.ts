@@ -7,10 +7,12 @@ import { MoviesService } from './services/movies.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   public genres : any;
+
   constructor(private _moviesServices: MoviesService) {
+    //Getting genres
     this._moviesServices.getGenres().subscribe(res => {
-      console.log(res)
       this.genres = res['genres'].slice(0, 20);
     });
   }

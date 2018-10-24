@@ -16,9 +16,11 @@ export class MovieSearchComponent implements OnInit {
   ngOnInit() {
   }
 
+  //Search movies Data
   searchMovies() {
     this._moviesService.searchMovies(this.searchStr).subscribe(res => {
       this.searchRes = res['results'];
     })
   }
+
 }
